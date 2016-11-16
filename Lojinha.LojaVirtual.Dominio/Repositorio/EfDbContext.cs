@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-///using Lojinha.LojaVirtual.Dominio.
+using Lojinha.LojaVirtual.Dominio.Entidade;
 
 namespace Lojinha.LojaVirtual.Dominio.Repositorio
 {

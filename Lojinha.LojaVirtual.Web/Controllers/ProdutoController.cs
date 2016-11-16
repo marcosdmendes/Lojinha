@@ -9,14 +9,21 @@ namespace Lojinha.LojaVirtual.Web.Controllers
 {
     public class ProdutoController : Controller
     {
-        private ProdutosRepositorio _reposirorio;
+        private ProdutosRepositorio _repositorio;
         // GET: Produto
         public ActionResult Index()
         {
-            _reposirorio = new ProdutosRepositorio();
-            var produtos = _reposirorio.Produtos.Take(10);
+            _repositorio = new ProdutosRepositorio();
+            var produtos = _repositorio.Produtos.Take(10);
+
+            var teste = CriarMetodo();
 
             return View(produtos);
+        }
+
+        private object CriarMetodo()
+        {
+            throw new NotImplementedException();
         }
     }
 }
